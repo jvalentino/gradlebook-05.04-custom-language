@@ -1,0 +1,15 @@
+buildscript {
+  repositories {
+	jcenter()
+  }
+  dependencies {
+    classpath 'com.blogspot.jvalentino.gradle:custom-language:1.0.0'
+  }
+}
+
+apply plugin:'lol'
+
+lol {
+    inputDir = 'lol'
+    fileExt = '.lol'
+}
